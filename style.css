@@ -727,17 +727,29 @@ footer {
 }
 
 /* Legal Pages */
+.legal-page {
+    background: var(--bg-secondary);
+    min-height: 100vh;
+}
+
+.legal-page .navbar {
+    background: rgba(245, 244, 241, 0.85);
+}
+
 .legal-content {
     max-width: 720px;
     margin: 0 auto;
-    padding: 4rem 5% 6rem;
+    padding: 3rem 5% 6rem;
     line-height: 1.75;
 }
 
 .legal-content .legal-header {
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--border);
+    margin-bottom: 2.5rem;
+    padding: 2.5rem 2rem 2rem;
+    background: var(--bg-white);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 16px var(--shadow-soft);
 }
 
 .legal-content h1 {
@@ -757,15 +769,39 @@ footer {
     font-size: 1.05rem;
     color: var(--text-secondary);
     line-height: 1.7;
-    margin-bottom: 2.5rem;
-    padding: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem 1.75rem;
     background: var(--coral-soft);
     border-radius: 16px;
-    border: 1px solid rgba(224, 122, 95, 0.1);
+    border: 1px solid rgba(224, 122, 95, 0.15);
+}
+
+.legal-section {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.75rem 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 8px var(--shadow-soft);
+}
+
+.legal-section h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    letter-spacing: -0.3px;
+}
+
+.legal-section p {
+    color: var(--text-secondary);
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
 }
 
 .legal-content h2 {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 600;
     margin-top: 2.5rem;
     margin-bottom: 0.75rem;
@@ -780,10 +816,18 @@ footer {
 }
 
 .legal-content .legal-footer {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
     font-size: 0.9rem;
+    color: var(--text-tertiary);
+    box-shadow: 0 1px 8px var(--shadow-soft);
+}
+
+.legal-content .legal-footer p {
+    margin-bottom: 0;
     color: var(--text-tertiary);
 }
 
